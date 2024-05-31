@@ -1,0 +1,91 @@
+.basket-list {
+  padding: 10px; /* Initial padding */
+}
+
+.basket-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px; /* Initial padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px; /* Adjusted spacing between cards */
+}
+
+.item-name {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.pbtn, .rbtn {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pbtn:hover, .rbtn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .basket-card {
+    padding: 15px; /* Adjusted padding for mobile */
+  }
+
+  .pbtn, .rbtn {
+    padding: 8px 15px; /* Adjusted padding for mobile */
+  }
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  margin: 0 10px; /* Adjusted margin to separate quantity from buttons */
+  margin-left: 15px;
+}
+.total-price {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.back-to-products,
+.place-order {
+  
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.place-order{
+ margin-left: 4px;
+  padding: 13px 20px;
+  padding-top: 14px;
+
+}
+.back-to-products:hover,
+.place-order:hover {
+  background-color: #0056b3;
+}
